@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <form action="index.php" method="post">
+        <table>
+            <tr>
+                <th>
+                    <legend>Name:</legend>
+                </th>
+                <td>
+                    <input  placeholder="First Name" name="firstName" id="firstname" type="text">    
+                    <input  placeholder="Middle Name" id="middlename" name="middlename" type="text">    
+                    <input placeholder="Last Name" id="lastname" name="lastname" type="text">
+                </td>  
+            </tr>
+            <tr>
+                <th>
+                    <legend>Age:</legend>
+                </th>
+                <td>
+                    <input  placeholder="Age" name="age" id="age" size="3" type="number">    
+                </td>  
+            </tr>
+            <tr>
+                <th>
+                    <legend>Gender:</legend>
+                </th>
+                <td>
+                    <select name="Gender" name="gender">
+                        <option value="Select">Chose one!</option>>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>    
+                </td> 
+            </tr>
+            <tr>
+                <th>
+                    <legend>Password:</legend>
+                </th>
+                <td>
+                    <input name="password" placeholder="Password" id="password" name="password" type="password">
+                    <input type="checkbox" onclick="myFunction()">Show Password
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <legend>Confirm Password:</legend>
+                </th>
+                <td>
+                    <input placeholder="confirm Password" id="confirm_password"  type="password">
+
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <legend>Email:</legend>
+                </th>
+                <td>
+                    <input name="email" placeholder="E-Mail Address" name="email" id="email"  type="text">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="phone" class="phone">Phone Numeber:</label>
+                </th>
+                <td>
+                    <input name="phone" placeholder="Phone" name="phone" id="phone"  type="number">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Address" class="Address">Address:</label>
+                </th>
+                <td>
+                    <textarea rows="20" cols="40" name="address"id="address"></textarea>  
+                </td>
+            </tr>
+              
+
+            <tr>
+                <th>
+                    <label for="zipcode">Zipcode:</label>
+                </th>
+                <td>
+                    <input name="zipcode" placeholder="Zip Code" id="zipcode"  type="text" size="6" name="zipcode">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                </td>
+                <td>
+                    <input type="submit" onclick="verify()">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
